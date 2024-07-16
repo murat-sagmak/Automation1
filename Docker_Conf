@@ -1,9 +1,9 @@
 docker run \
   --volume=/var/lib/drone:/data \
-  --env=DRONE_GITHUB_CLIENT_ID=Ov23liMmbHTJUy0pmkP9 \
-  --env=DRONE_GITHUB_CLIENT_SECRET=e43559a1aa34d219d259f87ddabe241a7068bf05 \
-  --env=DRONE_RPC_SECRET=24dc108ec04fe27c06f4feac74c73dd2 \
-  --env=DRONE_SERVER_HOST=91c3-95-2-10-120.ngrok-free.app \
+  --env=DRONE_GITHUB_CLIENT_ID=Ov23lia1b9o7L9A2wHeu \
+  --env=DRONE_GITHUB_CLIENT_SECRET=53536c94cb6f2e171e2df0d9b403f91307e9bb9d \
+  --env=DRONE_RPC_SECRET=c11ed0ebe44340d902976ef1dd7109a9 \
+  --env=DRONE_SERVER_HOST=40b3-176-88-176-238.ngrok-free.app \
   --env=DRONE_SERVER_PROTO=https \
   --env=DRONE_USER_CREATE=username:murat-sagmak,admin:true \
   --publish=80:80 \
@@ -17,8 +17,8 @@ docker run \
 docker run --detach \
   --volume=/var/run/docker.sock:/var/run/docker.sock \
   --env=DRONE_RPC_PROTO=https \
-  --env=DRONE_RPC_HOST=91c3-95-2-10-120.ngrok-free.app \
-  --env=DRONE_RPC_SECRET=24dc108ec04fe27c06f4feac74c73dd2 \
+  --env=DRONE_RPC_HOST=40b3-176-88-176-238.ngrok-free.app \
+  --env=DRONE_RPC_SECRET=c11ed0ebe44340d902976ef1dd7109a9 \
   --env=DRONE_RUNNER_CAPACITY=3 \
   --env=DRONE_RUNNER_NAME=my-first-runner \
   --publish=3000:3000 \
