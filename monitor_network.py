@@ -9,5 +9,7 @@ def get_device_status(task):
     result = task.run(task=netmiko_send_command, command_string="show ip interface brief")
     task.host["status"] = result.result
     print(result)
+    print(result)
+
     
 
