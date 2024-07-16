@@ -5,6 +5,11 @@ name: Python CI/CD
 steps:
 - name: Install dependencies
   image: python:3.9
+  environment:
+    PASSWORD:
+      from_secret: PASSWORD
+    USER:
+      from_secret: USER
   commands:
   - echo "Installing dependencies"
   - pip install -r requirements.txt
