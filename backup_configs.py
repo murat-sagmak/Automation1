@@ -6,6 +6,9 @@ from nornir_netmiko.tasks import netmiko_send_command
 from nornir_utils.plugins.functions import print_result
 
 def backup_config(task: Task) -> Result:
+
+
+    print("Current directory:", os.getcwd())
     result = task.run(task=netmiko_send_command, command_string="show running-config")
     backup_directory = "backups"
     
