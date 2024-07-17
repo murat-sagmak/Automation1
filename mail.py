@@ -3,11 +3,11 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_email(subject, body, to_emails):
-    from_email = 'your-email@example.com'
+    from_email = 'muratsagmak01@gmail.com'
     smtp_server = 'smtp.mailtrap.io'
     smtp_port = 2525
-    smtp_username = 'your_username'
-    smtp_password = 'your_password'
+    smtp_username = 'a40b9920781fdb'
+    smtp_password = '5af27ca631bfd2'
     
     msg = MIMEMultipart()
     msg['From'] = from_email
@@ -31,5 +31,5 @@ def send_email(subject, body, to_emails):
 send_email(
     subject="Network Automation Alert",
     body="Network device issue detected.",
-    to_emails=["your-email@example.com"]
+    to_emails=["muratsagmak01@gmail.com"]
 )
