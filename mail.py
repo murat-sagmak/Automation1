@@ -27,7 +27,6 @@ def send_email(subject, body, to_emails):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-# Kullanım:
 send_email(
     subject="Network Automation Alert",
     body="Network device issue detected.",
