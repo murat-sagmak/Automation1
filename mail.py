@@ -30,5 +30,5 @@ def send_email(subject, body, to_emails):
 send_email(
     subject="Network Automation Alert",
     body="Network device issue detected.",
-    to_emails=["muratsagmak01@gmail.com"]
+    to_emails=["muratsagmak001@gmail.com"]
 )
