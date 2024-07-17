@@ -3,3 +3,4 @@ napalm
 nornir
 nornir-utils
 nornir-napalm
+smtplib
