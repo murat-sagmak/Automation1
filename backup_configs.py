@@ -23,6 +23,6 @@ def backup_config(task: Task) -> Result:
     return Result(host=task.host, result=f"Yedek {backup_filename} olarak kaydedildi")
 
 nr = InitNornir(config_file="config.yaml")
-
+# */10*** jenkins her 10 dakika da
 result = nr.run(task=backup_config)
 print_result(result)
